@@ -1,0 +1,20 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int wdraw;
+    float ac, bal;
+ 
+    cin >> wdraw >> ac;
+ 
+    if((wdraw%5)==0 && wdraw <= (ac-.50))
+    {
+        bal = (ac - wdraw)-.50;
+        cout << fixed << setprecision(2) << bal << endl;
+    }
+    else
+        cout << fixed << setprecision(2) << ac << endl;
+ 
+    return 0;
+}
+ 
